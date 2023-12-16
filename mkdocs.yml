@@ -1,0 +1,5 @@
+site_name: MTD Software docs
+nav:
+  - Home: index.md
+  - About: about.md
+theme: readthedocs
