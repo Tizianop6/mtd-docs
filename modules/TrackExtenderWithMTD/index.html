@@ -1,0 +1,1025 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../TOFPid/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>TrackExtenderWithMTD - MTD Software docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4l-4 4-4-4H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v12h4.83L12 19.17 15.17 16H20V4H4m2 3h12v2H6V7m0 4h10v2H6v-2Z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#trackextenderwithmtd" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MTD Software docs" class="md-header__button md-logo" aria-label="MTD Software docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MTD Software docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TrackExtenderWithMTD
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Modules
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MTD Software docs" class="md-nav__button md-logo" aria-label="MTD Software docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MTD Software docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Modules
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TrackExtenderWithMTD
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TrackExtenderWithMTD
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#class-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trybtllayers" class="md-nav__link">
+    <span class="md-ellipsis">
+      tryBTLLayers()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tryetllayers" class="md-nav__link">
+    <span class="md-ellipsis">
+      tryETLLayers()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildtrack" class="md-nav__link">
+    <span class="md-ellipsis">
+      buildTrack()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildtrackextra" class="md-nav__link">
+    <span class="md-ellipsis">
+      buildTrackExtra()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computetracktofpidinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      computeTrackTofPidInfo()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trackpathlength" class="md-nav__link">
+    <span class="md-ellipsis">
+      trackPathLength()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillvaluemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      fillValueMap()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tracksegments" class="md-nav__link">
+    <span class="md-ellipsis">
+      TrackSegments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracktofpidinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      TrackTofPidInfo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TOFPid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TOFPid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#class-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trybtllayers" class="md-nav__link">
+    <span class="md-ellipsis">
+      tryBTLLayers()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tryetllayers" class="md-nav__link">
+    <span class="md-ellipsis">
+      tryETLLayers()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildtrack" class="md-nav__link">
+    <span class="md-ellipsis">
+      buildTrack()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildtrackextra" class="md-nav__link">
+    <span class="md-ellipsis">
+      buildTrackExtra()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computetracktofpidinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      computeTrackTofPidInfo()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trackpathlength" class="md-nav__link">
+    <span class="md-ellipsis">
+      trackPathLength()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillvaluemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      fillValueMap()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tracksegments" class="md-nav__link">
+    <span class="md-ellipsis">
+      TrackSegments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracktofpidinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      TrackTofPidInfo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="trackextenderwithmtd">TrackExtenderWithMTD</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This producer module (<code>EDProducer</code>) adds time and related information to the event, including:</p>
+<ul>
+<li>time of arrival at MTD (<script type="math/tex">t_\mathrm{MTD}</script>) with uncertainty;</li>
+<li>time of flight (henceforth TOF) under 3 different mass hypotheses (<script type="math/tex">\pi</script>, <script type="math/tex">K</script>, <script type="math/tex">p</script>) with uncertainty;</li>
+<li>length of travelled path from primary vertex to MTD;</li>
+<li>information on track matching to BTL, ETL hits (spatial and time match <script type="math/tex">\chi^2</script>);</li>
+<li>momentum, <script type="math/tex">\beta</script> and <script type="math/tex">t_0</script> of each track at innermost point.</li>
+</ul>
+</div>
+<h2 id="class-definition">Class definition</h2>
+<p>Since <code>TrackExtenderWithMTD</code> class is designed to work with possibly different types of track collections, a template class <code>TrackExtenderwithMTDT</code> is defined as:
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">TrackCollection</span><span class="o">&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">TrackExtenderWithMTDT</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">edm</span><span class="o">::</span><span class="n">stream</span><span class="o">::</span><span class="n">EDProducer</span><span class="o">&lt;&gt;</span><span class="p">;</span>
+</span></code></pre></div></p>
+<p>Although the collection can be changed, it is now meant to work with <code>reco::TrackCollection</code>:</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">typedef</span><span class="w"> </span><span class="n">TrackExtenderWithMTDT</span><span class="o">&lt;</span><span class="n">reco</span><span class="o">::</span><span class="n">TrackCollection</span><span class="o">&gt;</span><span class="w"> </span><span class="n">TrackExtenderWithMTD</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="code-flow">Code flow</h2>
+<p>The main entrypoint is the <code>produce()</code> method. Although each called method is described in full detail the <a href="#methods">Methods</a> section below, an overall summary is here provided. For each track, <code>produce()</code>:</p>
+<ol>
+<li>first matches BTL and ETL hits to the track using the <a href="#trybtllayers"><code>tryBTLLayers()</code></a>, <a href="#tryetllayers"><code>tryETLLayers()</code></a> methods. If matched, trajectory and track hit list is updated to also include MTD hits. The association with hits is what determines <script type="math/tex">t_\mathrm{MTD}</script> for the track. It should be noted that, in order for an approximate evaluation of time compatibility between the track and MTD hits, the <a href="#trackpathlength"><code>trackPathLength()</code></a> method is first invoked here, although its output is not used at this point for the actual TOF calculation.</li>
+<li>By using the <a href="#buildtrack"><code>buildTrack()</code></a> method, the updated track is built, also calculating the path length between vertex and MTD, the associated TOF under different mass hypotheses and kinematic quantities obtained in the calculation. It is at this step that track back-propagation to vertex is performed, evaluating the track momentum at each tracker hit: all this information is contained in a <a href="#tracksegments"><code>TrackSegments</code></a> object, built by the <a href="#trackpathlength"><code>trackPathLength()</code></a> method. This object is then fed to the <a href="#computetracktofpidinfo"><code>computeTrackTofPidInfo()</code></a> method for TOF claculation, which saves all info to a <a href="#tracktofpidinfo"><code>TrackTofPidInfo</code></a> object.
+Each rebuilt track is stored in a track collection that will be saved to the event in the final step.</li>
+<li>By using the <a href="#buildtrackextra"><code>buildTrackExtra()</code></a> method, track extra information, most notably including its hit collection, is populated and associated to the track re-built in the previous step.</li>
+<li>The rebuilt tracks, their associated track extras and associated reco hits are saved back into the <code>Event</code> (respectively as <code>TrackCollection</code>, <code>TrackExtraCollection</code>, <code>TrackingRecHit</code>). All previously evaluted time information is instead stored as a <code>ValueMap</code> and saved in the event through the <a href="#fillvaluemap"><code>fillValueMap()</code></a> method. </li>
+</ol>
+<p>The overall call flow is hence as follows:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>produce<span class="o">()</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├──<span class="w"> </span>tryBTLLayers<span class="o">()</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├──<span class="w"> </span>tryETLLayers<span class="o">()</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├──<span class="w"> </span>trackPathLength<span class="o">()</span><span class="c1">#(1)!</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├──<span class="w"> </span>buildTrack<span class="o">()</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│<span class="w">   </span>├──<span class="w"> </span>trackPathLength<span class="o">()</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>│<span class="w">   </span>└──<span class="w"> </span>computeTrackTofPidInfo<span class="o">()</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>├──<span class="w"> </span>buildTrackExtra<span class="o">()</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>└──<span class="w"> </span>fillValueMap<span class="o">()</span>
+</span></code></pre></div></p>
+<ol>
+<li>called, but not used for actual TOF evaluation (second call is)</li>
+</ol>
+<h2 id="methods">Methods</h2>
+<h3 id="trybtllayers"><code>tryBTLLayers()</code></h3>
+<hr />
+<h3 id="tryetllayers"><code>tryETLLayers()</code></h3>
+<hr />
+<h3 id="buildtrack"><code>buildTrack()</code></h3>
+<div class="language-cpp highlight"><span class="filename">Prototype</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">TrackCollection</span><span class="o">&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">reco</span><span class="o">::</span><span class="n">Track</span><span class="w"> </span><span class="n">TrackExtenderWithMTDT</span><span class="o">&lt;</span><span class="n">TrackCollection</span><span class="o">&gt;::</span><span class="n">buildTrack</span><span class="p">(</span><span class="w"> </span><span class="c1">//(1)!</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">reco</span><span class="o">::</span><span class="n">TrackRef</span><span class="o">&amp;</span><span class="w"> </span><span class="n">orig</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">traj</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">trajWithMtd</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">reco</span><span class="o">::</span><span class="n">BeamSpot</span><span class="o">&amp;</span><span class="w"> </span><span class="n">bs</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">MagneticField</span><span class="o">*</span><span class="w"> </span><span class="n">field</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Propagator</span><span class="o">*</span><span class="w"> </span><span class="n">thePropagator</span><span class="p">,</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">hasMTD</span><span class="p">,</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pathLengthOut</span><span class="p">,</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">tmtdOut</span><span class="p">,</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sigmatmtdOut</span><span class="p">,</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">tofpi</span><span class="p">,</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">tofk</span><span class="p">,</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">tofp</span><span class="p">,</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sigmatofpi</span><span class="p">,</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sigmatofk</span><span class="p">,</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sigmatofp</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+</span></code></pre></div>
+<ol>
+<li>buildTrack is a template method (to which the <code class="language-cpp highlight"><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">TrackCollection</span><span class="o">&gt;</span></code> heading refers to) of a template class (hence <code class="language-cpp highlight"><span class="n">TrackExtenderWithMTDT</span><span class="o">&lt;</span><span class="n">TrackCollection</span><span class="o">&gt;</span></code>) returning a <code>reco::Track</code> value</li>
+</ol>
+<!-- 
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `float `    | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+-->
+
+<h4 id="steps">Steps</h4>
+<ol>
+<li><strong>Calculate path length</strong> by invoking <a href="#trackpathlength"><code>trackPathLength()</code></a></li>
+<li><strong>Calculate <script type="math/tex">t_\mathrm{MTD}</script></strong> depending on whether track crossed:<ul>
+<li><strong>BLT</strong>: since only 1 hit can be recorded, track time is equal to that hit time;</li>
+<li><strong>ELT</strong>: since 2 hits must be always recorded, defining the innermost hit as hit #1 and the outermost as hit #2:<ul>
+<li>propagate track from hit #2 back to hit #1, evaluating <script type="math/tex">t_{2 \rightarrow 1} \equiv t_2 - \Delta t(2, 1)</script> with <script type="math/tex">\sigma(t_{2 \rightarrow 1}) \equiv \sigma_\mathrm{MTD} \oplus \sigma(\Delta t(\pi, p)) </script> (i.e. uncertainty is inflated by TOF variation given by extreme mass hypotheses of pion and proton)</li>
+<li>if <script type="math/tex">t_1</script> and <script type="math/tex">t_{2 \rightarrow 1}</script> are compatible (i.e. they pass a given <script type="math/tex">\chi^2</script> cut), their weighted average is taken as MTD time. Spatial hit corresponds to hit #1.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Calculate TOF</strong> by invoking <a href="#computetracktofpidinfo"><code>computeTrackTofPidInfo()</code></a> using the <code>TofCalc::kSegm</code> option (i.e. taking into account the variation in momentum along propagation).</li>
+</ol>
+<h4 id="output">Output</h4>
+<p>Returns <code>reco::Track</code> with same trajectory as input one (i.e. including matched MTD hit) with the evaluated time at vertex. 
+Also saves the following value in the argument references:</p>
+<ul>
+<li>MTD time and relative uncertainty as defined above;</li>
+<li>travelled path length (as per <a href="#trackpathlength"><code>trackPathLength()</code></a>);</li>
+<li>time of flight under <script type="math/tex">\pi</script>, <script type="math/tex">K</script>, <script type="math/tex">p</script> mass hypotheses with relative uncertainty (as per <a href="#computetracktofpidinfo"><code>computeTrackTofPidInfo()</code></a>).</li>
+</ul>
+<hr />
+<h3 id="buildtrackextra">buildTrackExtra()</h3>
+<hr />
+<h3 id="computetracktofpidinfo">computeTrackTofPidInfo()</h3>
+<div class="language-cpp highlight"><span class="filename">Prototype</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">const</span><span class="w"> </span><span class="n">TrackTofPidInfo</span><span class="w"> </span><span class="nf">computeTrackTofPidInfo</span><span class="p">(</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">magp2</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">length</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="n">TrackSegments</span><span class="w"> </span><span class="n">trs</span><span class="p">,</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">t_mtd</span><span class="p">,</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">t_mtderr</span><span class="p">,</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">t_vtx</span><span class="p">,</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">t_vtx_err</span><span class="p">,</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">addPIDError</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">,</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="n">TofCalc</span><span class="w"> </span><span class="n">choice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TofCalc</span><span class="o">::</span><span class="n">kCost</span><span class="p">,</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="n">SigmaTofCalc</span><span class="w"> </span><span class="n">sigma_choice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SigmaTofCalc</span><span class="o">::</span><span class="n">kCost</span><span class="p">);</span>
+</span></code></pre></div>
+<h4 id="steps_1">Steps</h4>
+<p>Supports three TOF calculation strategies:</p>
+<ul>
+<li><code class="language-cpp highlight"><span class="n">TofCalc</span><span class="o">::</span><span class="n">kConst</span></code>: assuming constant momentum, evaluated TOF as <script type="math/tex">\Delta t \equiv \Delta \ell / {\beta c}</script>;</li>
+<li><code class="language-cpp highlight"><span class="n">TofCalc</span><span class="o">::</span><span class="n">kSegm</span></code>: takes into account the variation of momentum due to energy loss through propagation. Uses the <code>TrackSegments::computeTof()</code>, <code>TrackSegments::computeSigmaTof()</code> methods;</li>
+<li><code class="language-cpp highlight"><span class="n">TofCalc</span><span class="o">::</span><span class="n">kMixd</span></code>: calculates <script type="math/tex"> \Delta t \equiv \Delta \ell / {\beta c} + \Delta t_\texttt{kSegm} </script>. No physical meaning, only defined for convenience of use inside <code>tryBTLLayers()</code>, <code>tryETLLayers()</code>.</li>
+</ul>
+<p>The calculation is repeated for the pion, kaon and proton mass hypotheses. The associated <script type="math/tex">\beta</script> and <script type="math/tex">\gamma^2</script> is also evaluated.</p>
+<p>The time difference with respect to the primary vertex is calculated as <script type="math/tex; mode=display">\Delta t \equiv t_\mathrm{MTD} - \Delta t_\pi - t_\mathrm{vtx}</script> corresponding to the time of the particle at the vertex. The associated uncertainty is, crucially, defined as: </p>
+<p>
+<script type="math/tex; mode=display">\sigma_{\Delta t} \equiv \sigma_\mathrm{MTD} \oplus \sigma_\mathrm{vtx} \oplus \Delta t(\pi, p)</script>
+</p>
+<p>where <script type="math/tex"> \Delta t(\pi, p) \equiv \Delta t_\pi - \Delta t_p </script> (i.e. difference between TOF in pion and proton hypothesis). This last term is only included if <code>addPIDError = 1</code>.</p>
+<details class="info">
+<summary>Why is uncertainty evaluated this way?</summary>
+<p>By inflating the uncertainty on the time at vertex in this way, we are taking into account the uncertainty on the actual particle ID. This is used in the first iteration of the 4D vertex reconstruction algorithm, where different mass hypotheses cannot be resolved until a first version of vertex candidates is provided.</p>
+</details>
+<p>Lastly, a likelihood for each mass hypothesis <script type="math/tex">\mathrm{hp}</script> is evaluated as:</p>
+<p>
+<script type="math/tex; mode=display"> p(\mathrm{hp}) = \frac{e^{-\chi^2_\mathrm{hp}/2}}{\sum_\mathrm{hp} e^{-\chi^2_\mathrm{hp}/2}} \hspace{0.5cm} \mathrm{ where }\; \ \chi^2_\mathrm{hp} = \frac{t_\mathrm{MTD} - \Delta t_\mathrm{hp} - t_\mathrm{vtx}}{\sigma_{\Delta t}^2}  </script>
+</p>
+<p>If any hypothesis performs better in terms of <script type="math/tex">\chi^2</script> with respect to the pion hypothesis, <script type="math/tex">\Delta t</script> is overriden by that hypothesis.</p>
+<h4 id="output_1">Output</h4>
+<p>Fills a <code>TrackTofPidInfo</code> struct with all the required information (see structure for list of member variables).</p>
+<hr />
+<h3 id="trackpathlength">trackPathLength()</h3>
+<div class="language-cpp highlight"><span class="filename">Prototype</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">bool</span><span class="w"> </span><span class="nf">trackPathLength</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">traj</span><span class="p">,</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">                     </span><span class="k">const</span><span class="w"> </span><span class="n">TrajectoryStateClosestToBeamLine</span><span class="o">&amp;</span><span class="w"> </span><span class="n">tscbl</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">                     </span><span class="k">const</span><span class="w"> </span><span class="n">Propagator</span><span class="o">*</span><span class="w"> </span><span class="n">thePropagator</span><span class="p">,</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">                     </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pathlength</span><span class="p">,</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">                     </span><span class="n">TrackSegments</span><span class="o">&amp;</span><span class="w"> </span><span class="n">trs</span><span class="p">);</span>
+</span></code></pre></div>
+<h4 id="steps_2">Steps</h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since it only calculates propagation <em>lengths</em>, it does not make use of any mass hypothesis. It only needs to know momentum.</p>
+</div>
+<p>Iterating over trajectory measurements (starting from outermost, first in order),</p>
+<ol>
+<li>propagates track state to the surface of the next measurement (i.e. to the previous hit);</li>
+<li>saves the calculated segment using <code>TrackSegments::addSegment()</code>, saving the propagated <script type="math/tex">\Delta\ell</script>, the squared momentum magnitude at the beginning of each trajectory segment and its associated uncertainty, as obtained from <code>TrajectoryState::curvilinearError()</code> (internally calculated after track fitting through the Kalman filter algorithm);</li>
+</ol>
+<p>In the end, the track segment associated to the propagation from the innermost trajectory measurement (i.e. first tracker hit) to the extrapolated beam spot is also computed.</p>
+<details class="info" open="open">
+<summary>Used Propagator</summary>
+<p>Uses the <code>PropagatorWithMaterialForMTD</code> propagator, i.e. a <code>PropagatorWithMaterial</code> propagator taking into account material effects, with the following parameters:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">Mass</span> <span class="o">=</span> <span class="n">cms</span><span class="o">.</span><span class="n">double</span><span class="p">(</span><span class="mf">0.13957018</span><span class="p">),</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">MaxDPhi</span> <span class="o">=</span> <span class="n">cms</span><span class="o">.</span><span class="n">double</span><span class="p">(</span><span class="mf">1.6</span><span class="p">),</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">PropagationDirection</span> <span class="o">=</span> <span class="n">cms</span><span class="o">.</span><span class="n">string</span><span class="p">(</span><span class="s1">&#39;anyDirection&#39;</span><span class="p">),</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">ptMin</span> <span class="o">=</span> <span class="n">cms</span><span class="o">.</span><span class="n">double</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">useOldAnalPropLogic</span> <span class="o">=</span> <span class="n">cms</span><span class="o">.</span><span class="n">bool</span><span class="p">(</span><span class="kc">False</span><span class="p">),</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">useRungeKutta</span> <span class="o">=</span> <span class="n">cms</span><span class="o">.</span><span class="n">bool</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
+Notice the usage of an analytical propagator.</p>
+</details>
+<h4 id="output_2">Output</h4>
+<p>Saves sum of partial propagation lengths <script type="math/tex">\ell</script> to input argument <code>pathlength</code>.</p>
+<p>Populates output <code>TrackSegments</code> with list of segments, each containing info on partial propagation length <script type="math/tex">\Delta \ell</script>, squared momentum magnitude <script type="math/tex">p^2</script> at the beginning of each segment and uncertainty on momentum.</p>
+<p>Returns <code class="language-cpp highlight"><span class="kt">bool</span><span class="w"> </span><span class="n">validpropagation</span></code> checking if <code class="language-cpp highlight"><span class="n">pathlength</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span></code> for each single propagated segment. If even a single segment fails, propagation is not considered valid.</p>
+<hr />
+<h3 id="fillvaluemap">fillValueMap()</h3>
+<h2 id="classes">Classes</h2>
+<h3 id="tracksegments">TrackSegments</h3>
+<h4 id="member-variables">Member variables</h4>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">uint32_t</span><span class="w"> </span><span class="n">nSegment_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">segmentPathOvc_</span><span class="p">;</span><span class="w">  </span><span class="c1">// segment lengths</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">segmentMom2_</span><span class="p">;</span><span class="w">     </span><span class="c1">// squared momentum at the start of each segment</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">segmentSigmaMom_</span><span class="p">;</span><span class="w"> </span><span class="c1">// uncertainty on momentum (not squared)</span>
+</span></code></pre></div>
+<h4 id="methods_1">Methods</h4>
+<ul>
+<li><code class="language-cpp highlight"><span class="kt">float</span><span class="w"> </span><span class="n">computeSigmaTof</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">mass_inv2</span><span class="p">)</span></code>: computes <script type="math/tex">\Delta t(m)</script> as sum of partial pathlength over each segment <script type="math/tex">\Delta t_i \equiv \texttt{segmentPathOvc_[i]} / \beta_i(m)</script>, with <script type="math/tex">\beta_i(m)</script> depending on the mass hypothesis <code>mass_inv2</code>;</li>
+<li><code class="language-cpp highlight"><span class="kt">float</span><span class="w"> </span><span class="n">computeSigmaTof</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">mass_inv2</span><span class="p">)</span><span class="w"> </span><span class="k">const</span></code>: computes <script type="math/tex">\sigma_{\Delta t(m)}</script> assuming a complete correlation between all momentum measurements, resulting in the formula 
+<script type="math/tex; mode=display">
+\sigma_{\Delta t(m)} = \sqrt{\sum_i \sum_j \sigma_{t_i} \sigma_{t_j}} \hspace{0.5cm} \mathrm{with} \, \sigma_{t_i} = \sigma_{p_i} \cdot \Delta \ell_i \, \frac{m^2}{p^2 E_i}
+</script>
+</li>
+</ul>
+<p>using the <script type="math/tex">\sigma_{p_i}</script> as obtained in <code>trackPathLength()</code>.</p>
+<details class="info">
+<summary>
+<script type="math/tex">\sigma_{\Delta t(m)}</script> calculation</summary>
+<p>As <script type="math/tex">\Delta t(m) = \sum_i t_i </script>, taking into account the pair-wise correlation between segments descending from the momentum measurement correlation:
+<script type="math/tex; mode=display">
+    \sigma_{\Delta t(m)} = \sqrt{\sum_i \sum_j \left| \frac{\partial \Delta t(m)}{\partial t_i} \right| \left| \frac{\partial \Delta t(m)}{\partial t_j} \right| \, \mathrm{Cov}(t_i, t_j)}
+</script>
+where <script type="math/tex">\mathrm{Cov}(t_i, t_j) = \rho_{ij} \sigma_{t_i} \sigma_{t_j}</script>. We here assume all segments to be <strong>fully correlated</strong> (<script type="math/tex">\rho_{ij} = 1</script>) (due to the fact the Kalman filter algorithm does not return them; however, we can assume them to be strongly correlated, since the momentum variation through propagation --as well as its associated uncertainty-- is small). Partial derivatives amount to 1.</p>
+<p>Since <script type="math/tex"> t_i = \Delta\ell_i / \beta_i = \Delta\ell_i / p_i \cdot E_i = \Delta\ell_i / p_i \cdot \sqrt{p_i^2 + m^2} </script>, we have:</p>
+<p>
+<script type="math/tex; mode=display">
+    \sigma_{t_i} = \left| \frac{\partial t_i}{\partial p_i} \right| \, \sigma_{p_i} = \sigma_{p_i} \cdot \Delta \ell_i \, \frac{m^2}{p^2 E_i}
+</script>
+</p>
+<p>hence the formula above.</p>
+</details>
+<p>Notice both methods refer to the <code>kSegm</code> calculation strategy, and are invoked within <code>computeTrackTofPidInfo()</code>.</p>
+<h3 id="tracktofpidinfo">TrackTofPidInfo</h3>
+<h4 id="member-variables_1">Member variables</h4>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">float</span><span class="w"> </span><span class="n">tmtd</span><span class="p">;</span><span class="w">         </span><span class="c1">// time of associated MTD hit</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kt">float</span><span class="w"> </span><span class="n">tmtderror</span><span class="p">;</span><span class="w">    </span><span class="c1">// uncertainty</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="kt">float</span><span class="w"> </span><span class="n">pathlength</span><span class="p">;</span><span class="w">   </span><span class="c1">// travelled distance between MTD hit and beamline PCA</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="kt">float</span><span class="w"> </span><span class="n">betaerror</span><span class="p">;</span><span class="w">    </span><span class="c1">// difference in beta between pion and proton mass hp</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="kt">float</span><span class="w"> </span><span class="n">dt</span><span class="p">;</span><span class="w">           </span><span class="c1">// time difference between vertex and track beamline PCA</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="kt">float</span><span class="w"> </span><span class="n">dterror</span><span class="p">;</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="kt">float</span><span class="w"> </span><span class="n">dtchi2</span><span class="p">;</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="kt">float</span><span class="w"> </span><span class="n">dt_best</span><span class="p">;</span><span class="w">      </span><span class="c1">// dt under mass hypothesis with smallest dtchi2</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="kt">float</span><span class="w"> </span><span class="n">dterror_best</span><span class="p">;</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="kt">float</span><span class="w"> </span><span class="n">dtchi2_best</span><span class="p">;</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="kt">float</span><span class="w"> </span><span class="n">gammasq_pi</span><span class="p">;</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="kt">float</span><span class="w"> </span><span class="n">beta_pi</span><span class="p">;</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="kt">float</span><span class="w"> </span><span class="n">dt_pi</span><span class="p">;</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="kt">float</span><span class="w"> </span><span class="n">sigma_dt_pi</span><span class="p">;</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="kt">float</span><span class="w"> </span><span class="n">gammasq_k</span><span class="p">;</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="kt">float</span><span class="w"> </span><span class="n">beta_k</span><span class="p">;</span>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="kt">float</span><span class="w"> </span><span class="n">dt_k</span><span class="p">;</span>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="kt">float</span><span class="w"> </span><span class="n">sigma_dt_k</span><span class="p">;</span>
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="kt">float</span><span class="w"> </span><span class="n">gammasq_p</span><span class="p">;</span>
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="kt">float</span><span class="w"> </span><span class="n">beta_p</span><span class="p">;</span>
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="kt">float</span><span class="w"> </span><span class="n">dt_p</span><span class="p">;</span>
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="kt">float</span><span class="w"> </span><span class="n">sigma_dt_p</span><span class="p">;</span>
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>
+</span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="kt">float</span><span class="w"> </span><span class="n">prob_pi</span><span class="p">;</span>
+</span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="kt">float</span><span class="w"> </span><span class="n">prob_k</span><span class="p">;</span>
+</span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="kt">float</span><span class="w"> </span><span class="n">prob_p</span><span class="p">;</span>
+</span></code></pre></div>
+<p>See <a href="#tracktofpidinfo"><code>computeTrackTofPidInfo</code></a> for how each variable is computed.</p>
+<h2 id="output_3">Output</h2>
+<p>The main output quantities are here summarized again, with pointers to the method which calculates them:</p>
+<!-- make table? -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.path", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
