@@ -1,5 +1,48 @@
 site_name: MTD Software docs
 nav:
   - Home: index.md
-  - About: about.md
-theme: readthedocs
+  - Modules:
+    - TrackExtenderWithMTD: modules/TrackExtenderWithMTD.md
+    - TOFPid: modules/TOFPid.md
+theme: 
+  name: material
+  palette:
+    scheme: slate
+    accent: orange
+    primary: black
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - content.code.copy
+    - content.code.annotate 
+    - search.suggest
+    - search.highlight
+  icon:
+    annotation: material/tooltip-text-outline
+plugins:
+  - search
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+  - tables
+  - mdx_math
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - toc:
+      toc_depth: 3

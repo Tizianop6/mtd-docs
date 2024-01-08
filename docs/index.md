@@ -15,3 +15,18 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+<!--
+block “types”:
+attention, caution, danger, error, hint, important, note, tip, and warning 
+
+use as:
+!!! type "optional title for warning box"
+    block content...
+
+if starting with ??? instead of !!!, collapsible call-out instead
+if starting with ???+, collapsible but extended 
+
+Full reference for admonition types:
+https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks-inline-end
+-->
