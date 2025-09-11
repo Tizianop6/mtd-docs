@@ -1,9 +1,21 @@
 site_name: MTD Software docs
 nav:
-  - Home: index.md
-  - Modules:
-    - TrackExtenderWithMTD: modules/TrackExtenderWithMTD.md
-    - TOFPid: modules/TOFPid.md
+  - Resources: 
+    - Home: index.md
+    - Samples: home/samples.md
+    - Presentations: home/presentations.md
+    - Useful links: home/links.md
+  - TOF:
+    - Modules:
+      - TrackExtenderWithMTD: TOF/modules/TrackExtenderWithMTD.md
+    
+  - Clustering: 
+    - Overview: clustering/overview.md
+    - Modules: clustering/modules.md
+    - RECO:
+      - Subpage placeholder: clustering/reco/placeholder.md
+    - SIM:
+      - Subpage placeholder: clustering/sim/placeholder.md
 theme: 
   name: material
   palette:
