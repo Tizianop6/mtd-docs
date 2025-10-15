@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../samples/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+        <link rel="next" href="../presentations/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>TOFPid - MTD Software docs</title>
+        <title>Generating samples - MTD Software docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#generating-samples-at-pu0-and-with-vanilla-cmssw" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="MTD Software docs" class="md-header__button md-logo" aria-label="MTD Software docs" data-md-component="logo">
+    <a href="../.." title="MTD Software docs" class="md-header__button md-logo" aria-label="MTD Software docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TOFPid
+              Generating samples
             
           </span>
         </div>
@@ -174,11 +183,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../.." class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -205,7 +216,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../TrackExtenderWithMTD/" class="md-tabs__link">
+        <a href="../../TOF/modules/TrackExtenderWithMTD/" class="md-tabs__link">
           
   
   
@@ -228,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../clustering/overview/" class="md-tabs__link">
+        <a href="../../clustering/overview/" class="md-tabs__link">
           
   
   
@@ -262,7 +273,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MTD Software docs" class="md-nav__button md-logo" aria-label="MTD Software docs" data-md-component="logo">
+    <a href="../.." title="MTD Software docs" class="md-nav__button md-logo" aria-label="MTD Software docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -277,26 +288,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -309,7 +325,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Resources
@@ -323,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -346,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../home/samples/" class="md-nav__link">
+      <a href="../samples/" class="md-nav__link">
         
   
   
@@ -366,10 +382,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../home/generatingsamples/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -380,6 +405,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -392,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../home/presentations/" class="md-nav__link">
+      <a href="../presentations/" class="md-nav__link">
         
   
   
@@ -415,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../home/links/" class="md-nav__link">
+      <a href="../links/" class="md-nav__link">
         
   
   
@@ -531,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../TrackExtenderWithMTD/" class="md-nav__link">
+      <a href="../../TOF/modules/TrackExtenderWithMTD/" class="md-nav__link">
         
   
   
@@ -612,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../clustering/overview/" class="md-nav__link">
+      <a href="../../clustering/overview/" class="md-nav__link">
         
   
   
@@ -635,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../clustering/modules/" class="md-nav__link">
+      <a href="../../clustering/modules/" class="md-nav__link">
         
   
   
@@ -701,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../clustering/reco/placeholder/" class="md-nav__link">
+      <a href="../../clustering/reco/placeholder/" class="md-nav__link">
         
   
   
@@ -775,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../clustering/sim/placeholder/" class="md-nav__link">
+      <a href="../../clustering/sim/placeholder/" class="md-nav__link">
         
   
   
@@ -823,6 +849,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -838,9 +866,91 @@
 
 
 
-  <h1>TOFPid</h1>
+<p>In case the RelVal samples are not enough to carry out an in-depth study, this page shows how to generate samples from scratch.</p>
+<h1 id="generating-samples-at-pu0-and-with-vanilla-cmssw">Generating samples at PU=0 and with vanilla CMSSW</h1>
+<p>A good place to start is to take RelVals as an example and then produce them privately.</p>
+<p>For instance, one can search for existing SingleMu samples, e.g. <code>/RelValSingleMuPt10/*CMSSW_15_1_0_pre1*mcRun4*/GEN-SIM-RECO</code> on DAS. </p>
+<p>One of the results is the following: <code>/RelValSingleMuPt10/CMSSW_15_1_0_pre1-141X_mcRun4_realistic_v3_STD_RegeneratedGS_Run4D110_noPU-v1/GEN-SIM-RECO</code>, namely a Single Muon sample at pT = 10 GeV generated at PU = 0 and using CMSSW_15_1_0_pre1.</p>
+<p>After finding the dataset name, you can look it up on the <a href="https://cms-pdmv-prod.web.cern.ch/relval/">RelVal website</a>: searching for <code>/RelValSingleMuPt10/CMSSW_15_1_0_pre1-141X_mcRun4_realistic_v3_STD_RegeneratedGS_Run4D110_noPU-v1/GEN-SIM-RECO</code> one gets to the <a href="https://cms-pdmv-prod.web.cern.ch/relval/relvals?output_dataset=/RelValSingleMuPt10/CMSSW_15_1_0_pre1-141X_mcRun4_realistic_v3_STD_RegeneratedGS_Run4D110_noPU-v1/GEN-SIM-RECO&amp;shown=2047&amp;page=0&amp;limit=50">following</a> page and can access the cmsDriver commands by clicking on the appropriate link under the "Actions" section.</p>
+<p>The cmsDriver commands are the ones used to build the config files for the RelVals, and are a good starting point to start private generation.</p>
+<p>Now, moving to an lxplus machine, you can start the generation by creating your working directory and downloading a local version of CMSSW. Highly suggested to use the same version of the RelVal reference sample, in our case CMSSW_15_1_0_pre1. </p>
+<p>You can have a local version using the following command:</p>
+<div class="language-text highlight"><pre><span></span><code>cmsrel CMSSW_15_1_0_pre1
+</code></pre></div>
+<p>then you can enter the source directory and set the environment variables</p>
+<div class="language-text highlight"><pre><span></span><code>cd CMSSW_15_1_0_pre1
+cd src
+cmsenv
+</code></pre></div>
+<p>now, in a directory of your choice, you can run the cmsDriver commands in order to produce the config files that are able to carry out the sample generation. </p>
+<div class="language-text highlight"><pre><span></span><code>cd ..
+mkdir yoursampledir
+cd yoursampledir
+</code></pre></div>
+<p>And then you can run the first cmsDriver command:</p>
+<div class="language-text highlight"><pre><span></span><code>cmsDriver.py SingleMuPt10_Eta2p85_cfi --beamspot DBrealisticHLLHC --conditions auto:phase2_realistic_T33_13TeV --customise SLHCUpgradeSimulations/Configuration/aging.customise_aging_1000 --datatier GEN-SIM --era Phase2C17I13M9 --eventcontent FEVTDEBUG --fileout &quot;file:step1.root&quot; --geometry ExtendedRun4D110 --nStreams 1 --nThreads 8 --no_exec --number 10 --python_filename step_1_cfg.py --relval 9000,100 --step GEN,SIM || exit $?
+</code></pre></div>
+<p>here we will not discuss all the parameters given to cmsDriver, the reference is <a href="https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCmsDriver">here</a>.</p>
+<p>The produced file contains the following part:</p>
+<div class="language-text highlight"><pre><span></span><code>process.generator = cms.EDFilter(&quot;Pythia8PtGun&quot;,
+    PGunParameters = cms.PSet(
+    AddAntiParticle = cms.bool(True),
+    MaxEta = cms.double(2.85),
+    MaxPhi = cms.double(3.14159265359),
+    MaxPt = cms.double(10.01),
+    MinEta = cms.double(-2.85),
+    MinPhi = cms.double(-3.14159265359),
+    MinPt = cms.double(9.99),
+    ParticleID = cms.vint32(-13)
+    ),
+    PythiaParameters = cms.PSet(
+    parameterSets = cms.vstring()
+    ),
+    Verbosity = cms.untracked.int32(0),
+    firstRun = cms.untracked.uint32(1),
+    psethack = cms.string(&#39;single mu pt 10&#39;)
+)
+</code></pre></div>
+<p>above you can set the kind of particle that you are producing, the kinematic range, and the presence of an additional antiparticle shot back-to-back with respect to the first one.</p>
+<p>Take a look also at this part, which is a the beginning of the config file, in order to set the number of events that are generated:</p>
+<div class="language-text highlight"><pre><span></span><code>process.maxEvents = cms.untracked.PSet(
+    input = cms.untracked.int32(10),
+    output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
+)
+</code></pre></div>
+<p>Afterwards, you can carry out the generation by sending the command:</p>
+<div class="language-text highlight"><pre><span></span><code>cmsRun step_1_cfg.py
+</code></pre></div>
+<p>The same can be done for the next steps, you can carry out the generation of the config files in the following  way:</p>
+<div class="language-text highlight"><pre><span></span><code># Command for step 2:
+cmsDriver.py step2 --conditions auto:phase2_realistic_T33 --customise SLHCUpgradeSimulations/Configuration/aging.customise_aging_1000 --datatier GEN-SIM-DIGI-RAW --era Phase2C17I13M9 --eventcontent FEVTDEBUGHLT --filein &quot;file:step1.root&quot; --fileout &quot;file:step2.root&quot; --geometry ExtendedRun4D110 --nStreams 1 --nThreads 8 --no_exec --number 10 --python_filename step_2_cfg.py --step DIGI:pdigi_valid,L1TrackTrigger,L1,L1P2GT,DIGI2RAW,HLT:@relvalRun4 || exit $?
 
+# Command for step 3:
+cmsDriver.py step3 --conditions auto:phase2_realistic_T33 --customise SLHCUpgradeSimulations/Configuration/aging.customise_aging_1000 --datatier GEN-SIM-RECO,MINIAODSIM,DQMIO --era Phase2C17I13M9 --eventcontent FEVTDEBUGHLT,MINIAODSIM,DQM --filein &quot;file:step2.root&quot; --fileout &quot;file:step3.root&quot; --geometry ExtendedRun4D110 --nStreams 1 --nThreads 8 --no_exec --number 10 --python_filename step_3_cfg.py --step RAW2DIGI,RECO,RECOSIM,PAT,VALIDATION:@phase2Validation+@miniAODValidation,DQM:@phase2+@miniAODDQM || exit $?
 
+# Command for step 4:
+cmsDriver.py step4 --conditions auto:phase2_realistic_T33 --customise SLHCUpgradeSimulations/Configuration/aging.customise_aging_1000 --era Phase2C17I13M9 --filein &quot;file:step3_inDQM.root&quot; --fileout &quot;file:step4.root&quot; --filetype DQM --geometry ExtendedRun4D110 --mc --nStreams 1 --no_exec --number 10 --python_filename step_4_cfg.py --scenario pp --step HARVESTING:@phase2Validation+@phase2+@miniAODValidation+@miniAODDQM || exit $?
+
+# Command for step 5:
+cmsDriver.py step5 --conditions auto:phase2_realistic_T33 --customise SLHCUpgradeSimulations/Configuration/aging.customise_aging_1000 --datatier ALCARECO --era Phase2C17I13M9 --eventcontent ALCARECO --filein &quot;file:step3.root&quot; --fileout &quot;file:step5.root&quot; --geometry ExtendedRun4D110 --nStreams 1 --nThreads 8 --no_exec --number 10 --python_filename step_5_cfg.py --step ALCA:SiPixelCalSingleMuonLoose+SiPixelCalSingleMuonTight+TkAlMuonIsolated+TkAlMinBias+MuAlOverlaps+EcalESAlign+TkAlZMuMu+TkAlDiMuonAndVertex+HcalCalHBHEMuonProducerFilter+TkAlUpsilonMuMu+TkAlJpsiMuMu || exit $?
+</code></pre></div>
+<p>and then you can run the n-th step in this way:</p>
+<div class="language-text highlight"><pre><span></span><code>cmsRun step_n_cfg.py
+</code></pre></div>
+<h1 id="generating-samples-with-an-edited-version-of-cmssw">Generating samples with an edited version of CMSSW</h1>
+<p>In order to generate samples with a non-production version of CMSSW, after downloading locally a CMSSW version with cmsrel, you can download some edits from an already existing branch of CMSSW committed on a personal fork of the repository.
+For instance you can download the edited files with the <code>git cms-checkout-topic</code> command, e.g. :</p>
+<div class="language-text highlight"><pre><span></span><code> git cms-checkout-topic Tizianop6:ntuplizer_tracks_forPathLength
+</code></pre></div>
+<p>Another option to do this, in the case you want to manually modify the code of a package, is to follow the advice given in the <a href="https://cms-sw.github.io/tutorial.html">CMSSW documentation</a>. Namely, you can download locally a package with the <code>git cms-addpkg</code> command, e.g.:</p>
+<div class="language-text highlight"><pre><span></span><code> git cms-addpkg DataFormats/TestObjects
+</code></pre></div>
+<p>then you can edit the code.</p>
+<p>After the code is downloaded from an existing branch, or after you developments, you can compile:</p>
+<div class="language-text highlight"><pre><span></span><code> scram b -j4
+</code></pre></div>
+<p>And you can go ahead with the <code>cmsDriver</code> and then <code>cmsRun</code> commands</p>
+<h1 id="mixing-adding-pu">Mixing: adding PU</h1>
 
 
 
@@ -889,10 +999,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.path", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.path", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
