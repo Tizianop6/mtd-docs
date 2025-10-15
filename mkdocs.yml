@@ -3,6 +3,8 @@ nav:
   - Resources: 
     - Home: index.md
     - Samples: home/samples.md
+    - Generating samples: home/generatingsamples.md
+
     - Presentations: home/presentations.md
     - Useful links: home/links.md
   - TOF:
