@@ -91,6 +91,24 @@ and then you can run the n-th step in this way:
 	
 # Generating samples with an edited version of CMSSW
 
+In order to generate samples with a non-production version of CMSSW, after downloading locally a CMSSW version with cmsrel, you can download some edits from an already existing branch of CMSSW committed on a personal fork of the repository.
+For instance you can download the edited files with the `git cms-checkout-topic` command, e.g. :
+     
+     git cms-checkout-topic Tizianop6:ntuplizer_tracks_forPathLength 
 
-# Adding PU
+Another option to do this, in the case you want to manually modify the code of a package, is to follow the advice given in the [CMSSW documentation](https://cms-sw.github.io/tutorial.html). Namely, you can download locally a package with the `git cms-addpkg` command, e.g.:
+
+     git cms-addpkg DataFormats/TestObjects
+     
+then you can edit the code.
+
+After the code is downloaded from an existing branch, or after you developments, you can compile:
+
+     scram b -j4 
+     
+And you can go ahead with the `cmsDriver` and then `cmsRun` commands
+
+# Mixing: adding PU
+
+
 
